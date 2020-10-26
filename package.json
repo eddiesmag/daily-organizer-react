@@ -6,12 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack",
-    "dev": "webpack-dev-server --open"
+    "dev": "webpack-dev-server --open",
+    "initialize": "babel-node src/server/initialize-db",
+    "server": "babel-node src/server/server",
+    "server-test": "babel-node src/server/server.spec",
+    "start-dev": "concurrently \"npm run server\" \"npm run dev\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "0.20.0",
     "babel-loader": "8.1.0",
+    "concurrently": "5.3.0",
     "history": "4.10.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
@@ -29,6 +35,10 @@
     "@babel/preset-env": "7.12.1",
     "@babel/preset-react": "7.12.1",
     "@babel/register": "7.12.1",
+    "body-parser": "1.19.0",
+    "cors": "2.8.5",
+    "express": "4.17.1",
+    "mongodb": "3.6.2",
     "webpack-cli": "3.3.12",
     "webpack-dev-server": "3.11.0"
   }

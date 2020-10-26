@@ -20,7 +20,7 @@ export const TaskDetail = ({
 		</div>
 		<div>
 			<button onClick={() => setTaskCompletion(id, !isComplete)}>
-				{isComplete ? "Reopen Task" : "Complete"}
+				{isComplete ? "Reopen" : "Complete"}
 			</button>
 		</div>
 		<div>
