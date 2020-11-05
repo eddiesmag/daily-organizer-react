@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 export const Navigation = () => (
 	<div>
 		<Link to="/dashboard">
-			<h1>App Name</h1>
+			<h1>Daily Organizer</h1>
 		</Link>
 	</div>
 );
